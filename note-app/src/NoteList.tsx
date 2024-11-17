@@ -128,7 +128,7 @@ export function NoteList ({availableTags, notes, onUpdateTag, onDeleteTag}: Note
                                 <Col>
                                     <Form.Control type="text" value={tag.label} onChange={e => onUpdateTag(tag.id, e.target.value)}/>
                                 </Col>
-                                <Col  xs='auto'><Button onClick={()=> onDeleteTag(tag.id)} variant="outline-danger">&times</Button></Col>
+                                <Col  xs='auto'><Button onClick={()=> onDeleteTag(tag.id)} variant="outline-danger">&times;</Button></Col>
                             </Row>
                         ))}
                     </Stack>
